@@ -20,7 +20,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/contact',
-        element: <div>Contact</div>,
+        element: (
+          <div>
+            <p className='text-9xl'>Contact</p>
+            <p className='text-9xl'>Contact</p>
+            <p className='text-9xl'>Contact</p>
+            <p className='text-9xl'>Contact</p>
+            <p className='text-9xl'>Contact</p>
+            <p className='text-9xl'>Contact</p>
+          </div>
+        ),
       },
     ],
   },

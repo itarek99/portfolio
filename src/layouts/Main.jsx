@@ -1,15 +1,18 @@
 import { Outlet } from 'react-router-dom';
 import SideNav from '../navigation/SideNav';
+import ProfileCard from './components/ProfileCard';
 
 const Main = () => {
   return (
     <>
       <div className='relative z-50'>
-        <div className='container mx-auto h-[80vh]  mt-[10vh]'>
+        <div className='container mx-auto h-[84vh] 2xl:h-[70vh]  mt-[8vh] 2xl:mt-[15vh]'>
           <div className='mx-16 h-full flex items-start'>
             <SideNav />
-            <div className='bg-red-600 scale-105 ml-5 mr-2 self-stretch w-[350px]'>User Card</div>
-            <div className='self-stretch bg-blue-500 flex-grow p-2'>
+            <div className='bg-white ml-2 self-stretch w-[350px]'>
+              <ProfileCard />
+            </div>
+            <div className='self-stretch bg-blue-500 flex-grow p-2 overflow-y-auto my-5'>
               <Outlet />
             </div>
           </div>

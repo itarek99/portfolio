@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 const NavItem = ({ item }) => {
   return (
     <NavLink
-      className={({ isActive }) => `flex py-3 flex-col items-center ${isActive ? 'text-blue-500' : ''}`}
+      className={({ isActive }) => `flex py-3.5 flex-col items-center ${isActive ? 'text-blue-600' : 'text-gray-700'}`}
       to={item.link}
       activeClassName='active'
     >
-      <item.icon className='h-6 w-6' />
-      <p className='text-xs font-semibold uppercase mt-1'>{item.title}</p>
+      <item.icon className='h-5 w-5' />
+      <p className='text-[11px] font-medium uppercase mt-1'>{item.title}</p>
     </NavLink>
   );
 };
@@ -23,7 +23,7 @@ const SideNav = () => {
   ];
 
   return (
-    <div className='bg-white divide-y px-2'>
+    <div className='bg-white divide-y px-2 my-5'>
       {items.map((item) => (
         <NavItem item={item} />
       ))}
