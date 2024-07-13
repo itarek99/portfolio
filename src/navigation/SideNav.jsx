@@ -4,12 +4,25 @@ import { NavLink } from 'react-router-dom';
 const NavItem = ({ item }) => {
   return (
     <NavLink
-      className={({ isActive }) => `flex py-3.5 flex-col items-center ${isActive ? 'text-blue-600' : 'text-gray-700'}`}
+      id='side-nav-link'
+      className={({ isActive }) =>
+        `flex z-10 relative py-5 group flex-col items-center px-2 border-x-4 border-x-white hover:border-r-primary transform duration-500 ${
+          isActive ? ' border-r-primary text-gray-950' : 'text-gray-600'
+        }`
+      }
       to={item.link}
       activeClassName='active'
     >
-      <item.icon className='h-5 w-5' />
-      <p className='text-[11px] font-medium uppercase mt-1'>{item.title}</p>
+      {({ isActive }) => (
+        <>
+          <item.icon
+            className={`h-5 w-5 group-hover:text-primary transform duration-500 ${isActive ? 'text-primary' : ''}`}
+          />
+          <p className='text-[11px] font-medium uppercase mt-1 group-hover:text-gray-950 transform duration-500'>
+            {item.title}
+          </p>
+        </>
+      )}
     </NavLink>
   );
 };
@@ -23,7 +36,7 @@ const SideNav = () => {
   ];
 
   return (
-    <div className='bg-white divide-y px-2 my-5'>
+    <div className='bg-white my-5'>
       {items.map((item) => (
         <NavItem item={item} />
       ))}
