@@ -12,17 +12,6 @@ body {
   background-color: #202020;
 }
 
-#side-nav-link:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to right, #d1d5db, #ffffff);
-  bottom: 0;
-  left: -4px;
-}
-
 #resume-download::before {
   content: '';
   height: 1px;
@@ -31,4 +20,18 @@ body {
   top: 0;
   background: linear-gradient(to right, #ffffff, #d1d5db, #ffffff);
   width: 100%;
+}
+
+.profile-card {
+  box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #d1d5db, #ffffff);
+  bottom: 0;
 }

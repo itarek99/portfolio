@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 const NavItem = ({ item }) => {
   return (
     <NavLink
-      id='side-nav-link'
       className={({ isActive }) =>
-        `flex z-10 relative py-5 group flex-col items-center px-2 border-x-4 border-x-white hover:border-r-primary transform duration-500 ${
+        `${
+          item.link !== 'contact' && 'gradient-border'
+        } after:-left-1 flex z-10 relative py-5 group flex-col items-center px-2 border-x-4 border-x-white hover:border-r-primary transform duration-500 ${
           isActive ? ' border-r-primary text-gray-950' : 'text-gray-600'
         }`
       }

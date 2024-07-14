@@ -8,9 +8,8 @@ const Main = () => {
       <div className='mx-16 h-full flex items-start'>
         <SideNav />
         <ProfileCard />
-        <div className='self-stretch bg-blue-500 flex-grow p-2 overflow-y-auto my-5'>
-          <Outlet />
-        </div>
+
+        <Outlet />
       </div>
     </div>
   );
