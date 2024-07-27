@@ -1,36 +1,29 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from './layouts/Main';
-import About from './pages/About';
-
+import About from './pages/About/About';
+import Contacts from './pages/Contacts/Contacts';
+import Resume from './pages/Resume/Resume';
+import Works from './pages/Works/Works';
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <About />,
       },
       {
         path: '/resume',
-        element: <div>Resume</div>,
+        element: <Resume />,
       },
       {
         path: '/works',
-        element: <div>Works</div>,
+        element: <Works />,
       },
       {
         path: '/contact',
-        element: (
-          <div>
-            <p className='text-9xl'>Contact</p>
-            <p className='text-9xl'>Contact</p>
-            <p className='text-9xl'>Contact</p>
-            <p className='text-9xl'>Contact</p>
-            <p className='text-9xl'>Contact</p>
-            <p className='text-9xl'>Contact</p>
-          </div>
-        ),
+        element: <Contacts />,
       },
     ],
   },
