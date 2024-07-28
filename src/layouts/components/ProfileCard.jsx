@@ -21,7 +21,7 @@ const SocialLink = ({ children, link = '', title = '' }) => {
 
 const ProfileCard = () => {
   return (
-    <div className='bg-white ml-2 self-stretch profile-card z-10'>
+    <div className='bg-white ml-2 self-stretch profile-card z-20'>
       <div className='h-full flex flex-col'>
         <div className='bg-gray-200 w-[350px] 2xl:w-[450px] clip-polygon overflow-hidden'>
           <div className='size-[300px] 2xl:size-[380px] mx-auto pr-3 -mt-8'>

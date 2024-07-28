@@ -12,7 +12,6 @@ const NavItem = ({ item }) => {
         }`
       }
       to={item.link}
-      activeClassName='active'
     >
       {({ isActive }) => (
         <>
@@ -39,7 +38,7 @@ const SideNav = () => {
   return (
     <div className='bg-white my-5'>
       {items.map((item) => (
-        <NavItem item={item} />
+        <NavItem item={item} key={item.link} />
       ))}
     </div>
   );
