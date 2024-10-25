@@ -3,7 +3,7 @@ import skills from '../../../data/skills';
 
 const Skills = () => {
   return (
-    <div className='mt-8 mb-4'>
+    <div className='mt-8 pb-6'>
       <SectionHeader>Skills</SectionHeader>
       <div className='px-7 mt-4 space-y-2'>
         {skills.map((skill) => (
