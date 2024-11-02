@@ -21,7 +21,7 @@ const SocialLink = ({ children, link = '', title = '' }) => {
 
 const ProfileCard = () => {
   return (
-    <div className='bg-white ml-2 self-stretch profile-card z-20'>
+    <div className='bg-white dark:bg-black ml-2 self-stretch profile-card z-20'>
       <div className='h-full flex flex-col'>
         <div className='bg-gray-200 w-[350px] 2xl:w-[450px] clip-polygon overflow-hidden'>
           <div className='size-[300px] 2xl:size-[380px] mx-auto pr-3 -mt-8'>
@@ -31,7 +31,7 @@ const ProfileCard = () => {
 
         <div className='mt-6 flex-grow text-center flex flex-col justify-between'>
           <div>
-            <p className='text-4xl font-medium'>Tarekul Islam</p>
+            <p className='text-4xl font-medium dark:text-white'>Tarekul Islam</p>
             <p className=' text-primary mt-1 font-medium'>Full Stack Developer</p>
 
             <div className='flex gap-2 justify-center mt-5'>
@@ -51,12 +51,12 @@ const ProfileCard = () => {
             </div>
           </div>
 
-          <div id='resume-download' className='py-3 relative'>
+          <div id='resume-download' className='py-3 relative '>
             <a
               href='https://drive.google.com/file/d/1VS_NHPl0jlnYbz-z6xA_TogKaCP_6Cs4/'
               target='_blank'
               rel='noopener noreferrer'
-              className='flex items-center justify-center gap-2 text-gray-800 font-medium hover:text-primary transform duration-300'
+              className='flex items-center justify-center gap-2 text-gray-800 dark:text-gray-300 font-medium hover:text-primary transform duration-300'
             >
               <span>Download Resume</span> <FaDownload />
             </a>
