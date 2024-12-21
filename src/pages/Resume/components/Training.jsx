@@ -4,7 +4,7 @@ const Training = () => {
   return (
     <div className='mt-8'>
       <SectionHeader>Training</SectionHeader>
-      <div className='px-7 mt-4'>
+      <div className='px-4 lg:px-7 mt-4'>
         <div>
           <p className='text-base font-semibold'>Complete Web Development</p>
           <p className='font-medium text-gray-600'>Programming Hero</p>

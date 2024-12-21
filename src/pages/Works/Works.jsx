@@ -27,15 +27,19 @@ const Works = () => {
   return (
     <PageContainer>
       <SectionHeader
+        className='flex-col items-start lg:flex-row lg:items-center'
         rightContent={
-          <div className='flex items-center'>
+          <div className='flex items-center mt-1'>
             {Object.keys(filters).map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={cn('text-base font-light text-gray-600 dark:text-white px-2 pt-0.5', {
-                  'text-primary dark:text-primary': activeFilter === filter,
-                })}
+                className={cn(
+                  'first:ps-0 text-base font-light text-gray-600 dark:text-white px-2 pt-0.5 transition duration-500',
+                  {
+                    'text-primary dark:text-primary': activeFilter === filter,
+                  }
+                )}
               >
                 {filters[filter]}
               </button>
@@ -46,7 +50,7 @@ const Works = () => {
         My Works
       </SectionHeader>
 
-      <div className='px-7 mt-4 grid grid-cols-3 gap-4'>
+      <div className='px-4 lg:px-7 mt-4 grid grid-cols-2 xl:grid-cols-3 gap-4 pb-4'>
         {filteredWorks.map((work) => (
           <WorkCard key={work.id} data={work} />
         ))}

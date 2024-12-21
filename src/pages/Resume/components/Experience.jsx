@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <>
       <SectionHeader>Experience</SectionHeader>
-      <div className='px-7 mt-4'>
+      <div className='px-4 lg:px-7 mt-4'>
         {experiences.map((experience) => (
           <div key={experience.id}>
             <a className='text-lg font-semibold' href={experience.url}>

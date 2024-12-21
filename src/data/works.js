@@ -1,4 +1,7 @@
-import staffDeck from '../assets/images/staff_deck.png';
+import landingPage from '../assets/images/landing_page.svg';
+import pixelPhoto from '../assets/images/photography.svg';
+import staffDeck from '../assets/images/staff_deck.svg';
+import tutsPoint from '../assets/images/tuts_point.svg';
 
 const works = [
   {
@@ -15,15 +18,7 @@ const works = [
     live: 'https://hr-management-client-2a430.web.app/',
     github: 'https://github.com/Rubayet-billah/hr-management-client/',
     technology: ['react', 'tailwindcss'],
-    thumbnail: staffDeck,
-  },
-  {
-    id: 3,
-    title: 'Pixel Photography',
-    live: 'https://hr-management-client-2a430.web.app/',
-    github: 'https://github.com/Rubayet-billah/hr-management-client/',
-    technology: ['react', 'tailwindcss', 'bootstrap'],
-    thumbnail: staffDeck,
+    thumbnail: tutsPoint,
   },
   {
     id: 4,
@@ -31,7 +26,15 @@ const works = [
     github: 'https://github.com/Rubayet-billah/hr-management-client/',
     live: 'https://hr-management-client-2a430.web.app/',
     technology: ['bootstrap'],
-    thumbnail: staffDeck,
+    thumbnail: landingPage,
+  },
+  {
+    id: 3,
+    title: 'Pixel Photography',
+    live: 'https://hr-management-client-2a430.web.app/',
+    github: 'https://github.com/Rubayet-billah/hr-management-client/',
+    technology: ['react', 'tailwindcss', 'bootstrap'],
+    thumbnail: pixelPhoto,
   },
 ];
 

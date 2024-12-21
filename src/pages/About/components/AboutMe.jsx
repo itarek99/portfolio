@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <>
       <SectionHeader>About Me</SectionHeader>
-      <div className='px-7 mt-4 text-gray-700 dark:text-white'>
+      <div className='px-4 lg:px-7 mt-4 text-gray-700 dark:text-white'>
         <p className='text-justify'>
           <span className='font-semibold '>Hello! I'm Tarekul Islam,</span> a Front-End Web Developer. I love combining
           logic and creative design to make eye-catching, accessible, and user-friendly websites and seeing the results

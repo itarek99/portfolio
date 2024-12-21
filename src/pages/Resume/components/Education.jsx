@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div className='mt-8'>
       <SectionHeader>Education</SectionHeader>
-      <div className='px-7 mt-4'>
+      <div className='px-4 lg:px-7 mt-4'>
         <div>
           <p className='text-base font-semibold'>Diploma In Mechanical Engineering</p>
           <p className='font-medium text-gray-600'>Faridpur Polytechnic Institute</p>
