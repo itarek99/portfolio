@@ -13,7 +13,7 @@ const WorkCard = ({ data }) => {
       <a href={data.live} target='_blank' className='overflow-hidden flex flex-col'>
         <h3 className='text-black dark:text-white text-base font-light'>{data.title}</h3>
         <img
-          className='w-full object-contain object-top transition-all ease-in-out duration-500 group-hover:scale-110'
+          className='w-full object-contain object-top transition-all ease-in-out duration-500 group-hover:scale-105'
           src={data.thumbnail}
           alt=''
         />

@@ -23,7 +23,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className='lg:container  mx-auto lg:h-[84vh] 2xl:h-[70vh] lg:mt-[8vh] 2xl:mt-[15vh]'>
+    <div className='lg:container  mx-auto lg:h-[84vh] 2xl:h-[80vh] lg:mt-[8vh] 2xl:mt-[10vh]'>
       <div className='lg:mx-16 h-full flex flex-col lg:flex-row items-start'>
         <SideNav profileCardHeight={profileCardHeight} />
         <ProfileCard setProfileCardHeight={setProfileCardHeight} />

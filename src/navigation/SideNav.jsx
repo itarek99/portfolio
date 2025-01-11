@@ -1,5 +1,6 @@
-import { FolderIcon, MoonIcon, NewspaperIcon, SunIcon, UserIcon } from '@heroicons/react/24/outline';
+import { FolderIcon, NewspaperIcon, SunIcon, UserIcon } from '@heroicons/react/24/outline';
 import { useEffect, useState } from 'react';
+import { BsMoonStars } from 'react-icons/bs';
 import { NavLink, useLocation } from 'react-router-dom';
 import cn from '../utils/cn';
 
@@ -68,7 +69,7 @@ const SideNav = ({ profileCardHeight }) => {
         className='gradient-border after:w-px after:h-full after:right-0 lg:after:h-px lg:after:w-full after:bottom-0 lg:after:left-0 flex-grow-0 after:bg-gradient-to-b lg:after:bg-gradient-to-r from-gray-500 to-white dark:to-black outline-none flex justify-center items-center z-10 relative group flex-col size-16 lg:w-full transition duration-300 dark:border-x-black'
         onClick={darkModeHandler}
       >
-        {dark ? <MoonIcon className='size-6 dark:text-white' /> : <SunIcon className='size-6 dark:text-white' />}
+        {dark ? <BsMoonStars className='size-5 dark:text-white' /> : <SunIcon className='size-6 dark:text-white' />}
       </button>
       {items.map((item) => (
         <NavItem item={item} key={item.link} />
