@@ -16,13 +16,14 @@ const Experience = () => {
               {experience.location} <span className='h-1 w-1 bg-primary' /> {experience.type}
             </p>
             {experience.positions.map((position) => (
-              <div key={position.id} className='ml-4 mt-2'>
+              <div key={position.id} className='ml-2 md:ml-4 mt-2'>
                 <p className='text-base font-semibold'>{position.title}</p>
                 <p className='text-sm font-medium text-gray-600'>{position.duration}</p>
-                <ul className='ml-4 mt-1.5'>
+                <ul className='ml-2 md:ml-4 mt-1.5'>
                   {position.responsibilities.map((responsibility, index) => (
-                    <li key={index} className='flex items-center gap-2'>
-                      <span className='block h-2 w-2 bg-primary'></span> <span>{responsibility}</span>
+                    <li key={index} className='flex items-start gap-2 mt-2 lg:mt-1'>
+                      <span className='block h-2 w-2 bg-primary mt-2 flex-shrink-0'></span>{' '}
+                      <span>{responsibility}</span>
                     </li>
                   ))}
                 </ul>

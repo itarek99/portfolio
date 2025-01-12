@@ -64,7 +64,7 @@ const SideNav = ({ profileCardHeight }) => {
   ];
 
   return (
-    <div className='fixed -bottom-1.5 nav-shadow left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0  flex z-50 lg:block lg:relative bg-white dark:bg-black my-5 transition duration-300'>
+    <div className='fixed -bottom-1.5 lg:bottom-0 nav-shadow left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0  flex z-50 lg:block lg:relative bg-white dark:bg-black my-5 transition duration-300'>
       <button
         className='gradient-border after:w-px after:h-full after:right-0 lg:after:h-px lg:after:w-full after:bottom-0 lg:after:left-0 flex-grow-0 after:bg-gradient-to-b lg:after:bg-gradient-to-r from-gray-500 to-white dark:to-black outline-none flex justify-center items-center z-10 relative group flex-col size-16 lg:w-full transition duration-300 dark:border-x-black'
         onClick={darkModeHandler}

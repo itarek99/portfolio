@@ -9,8 +9,8 @@ const Education = () => {
           <p className='text-base font-semibold'>Diploma In Mechanical Engineering</p>
           <p className='font-medium text-gray-600'>Faridpur Polytechnic Institute</p>
           <p className='mt-1.5 ml-4'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique assumenda minima quo, exercitationem in
-            dignissimos adipisci dolor provident placeat recusandae.
+            Completed a diploma in Mechanical Engineering in 2017, where a subject called &quot;Programming in C&quot;
+            ignited my passion for programming and set me on the path to software development.
           </p>
         </div>
       </div>

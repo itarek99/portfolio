@@ -3,25 +3,29 @@ const expertise = [
   {
     id: 1,
     title: 'Frontend Development',
-    description: 'Modern and mobile-ready website that will help you reach all of your marketing.',
+    description:
+      'Creating responsive, user-friendly interfaces with React ecosystem and modern CSS frameworks to enhance engagement and accessibility.',
     icon: FaHtml5,
   },
   {
     id: 2,
     title: 'Backend Development',
-    description: 'Modern and mobile-ready website that will help you reach all of your marketing.',
+    description:
+      'Building scalable and efficient backend solutions with Node.js, Express, and MongoDB for seamless functionality and reliable data management.',
     icon: FaCode,
   },
   {
     id: 3,
     title: 'Mobile Application',
-    description: 'Modern and mobile-ready website that will help you reach all of your marketing.',
+    description:
+      'Developing mobile applications with React Native and Expo, delivering smooth, high-performance experiences on both iOS and Android.',
     icon: FaMobileScreen,
   },
   {
     id: 4,
     title: 'Wordpress Development',
-    description: 'Modern and mobile-ready website that will help you reach all of your marketing.',
+    description:
+      "I'm familiar with creating basic WordPress plugins that enhance website functionality and add useful features to meet specific needs.",
     icon: FaWordpress,
   },
 ];

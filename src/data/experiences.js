@@ -12,9 +12,9 @@ const experiences = [
         title: 'Software Developer',
         duration: 'Feb 2024 - Present',
         responsibilities: [
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-          'Necessitatibus quasi sequi molestiae quaerat veniam facere.',
-          'aperiam eum corporis quidem sit soluta id aliquid, ut libero',
+          'Developing scalable and efficient backends using Express and MongoDB.',
+          'Creating cross-platform mobile applications with React Native and Expo.',
+          'Mentoring junior developers and supporting their professional growth.',
         ],
       },
       {
@@ -22,9 +22,9 @@ const experiences = [
         title: 'Junior Frontend Developer',
         duration: 'Feb 2023 - Jan 2024',
         responsibilities: [
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-          'Necessitatibus quasi sequi molestiae quaerat veniam facere.',
-          'aperiam eum corporis quidem sit soluta id aliquid, ut libero',
+          'Built and maintained web apps with React, Redux, and Tailwind CSS',
+          'Wrote test cases using Jest, React Testing Library, and Cypress',
+          'Managed tasks and collaborated using the Gitflow Workflow',
         ],
       },
     ],
